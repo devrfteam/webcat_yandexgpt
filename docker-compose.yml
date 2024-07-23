@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  webcat:
+    container_name: webcat
+    command: python3 bot/main.py
+    restart: always
+    build:
+      context: "."
+      dockerfile: Dockerfile
